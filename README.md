@@ -1,6 +1,4 @@
-# personal-portfolio
-
-Itis a personal project built with Next.js and TailwindCSS.
+It is a personal project built with Next.js and TailwindCSS.
 
 ## Getting Started
 
