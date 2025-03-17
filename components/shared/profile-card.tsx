@@ -5,11 +5,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Github, Linkedin, Mail } from "lucide-react";
 import { infos } from "@/constants";
 import Image from "next/image";
-import { useState } from "react";
-import { ContactModal } from "./contact-modal";
 
 export function ProfileCard() {
-  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
   const classNameButton =
     "text-gray-600 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-400";
   return (
@@ -37,16 +34,6 @@ export function ProfileCard() {
             {infos.shortBio}
           </p>
         </div>
-
-        <div className="mt-6">
-          <Button
-            className="w-full bg-gradient-to-r from-teal-500 to-cyan-500 hover:from-teal-600 hover:to-cyan-600 text-white border-0"
-            onClick={() => setIsModalOpen(true)}
-          >
-            Contact Me
-          </Button>
-        </div>
-
         <div className="flex xl:hidden justify-center space-x-4 mt-6">
           <a href={infos.github} target="_blank" rel="noopener noreferrer">
             <Button variant="ghost" size="icon" className={classNameButton}>
@@ -65,10 +52,6 @@ export function ProfileCard() {
           </a>
         </div>
       </CardContent>
-      <ContactModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-      />
     </Card>
   );
 }
