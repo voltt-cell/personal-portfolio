@@ -23,7 +23,22 @@ export const projects = [
       "Portfolio using Next.js 15, Tailwind CSS, and Shadcn.",
     techs: ["Next.js","Shadcn"],
     link: "https://github.com/voltt-cell/personal-portfolio",
-  }
+  },
+  {
+    title: "Contact Management Application",
+    description:
+      "Contact Management App helps users store, organize, and manage contacts.",
+    techs: ["ReactJs","JSON Sever","Semantic UI"],
+    link: "https://github.com/voltt-cell/contact-manager",
+  },
+  {
+    title: "Artbook",
+    description:
+      "It is an artist application for sharing their arts.",
+    techs: ["ReactJs","Sass","Axios","MySql","Express"],
+    link: "https://github.com/voltt-cell/art-book-major",
+  },
+
 ];
 
 export const infos = {
